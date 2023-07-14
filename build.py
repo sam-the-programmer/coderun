@@ -38,7 +38,7 @@ def main():
 	ask()
 	for file in os.listdir("bin"):
 		try:
-			os.remove("bin/" + file)
+			os.remove(f"bin/{file}")
 		except PermissionError:  # if it is protected or a folder or something
 			pass
 
